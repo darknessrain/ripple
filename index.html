@@ -1,64 +1,527 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ripple by darknessrain</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="EQL brings you an easier and smarter lifestyle">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link href='https://fonts.googleapis.com/css?family=Palanquin:100' rel='stylesheet' type='text/css'>
+        <title id="lang_title">EQL - Ripple</title>
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/plugins.css" rel="stylesheet">
+        <link href="css/style-library-1.css" rel="stylesheet">
+        <link href="css/blocks.css" rel="stylesheet">
+        <link href="css/eql_temp.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Ripple</h1>
-        <p></p>
+    </head>
+    <body>
+        <header id="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-inverse nav_spec" role="navigation" data-spy="affix" data-offset-top="500">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed fix_drop" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" target="_self">
+                            <img src="images/ripple/logo_ripple.png" alt="EQL" class="img-responsive fix_brand">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" data-id="intro" id="lang_navlink1">Intro</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="product_central.html" data-id="#" id="lang_navlink2">Central</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_door.html" data-id="#" id="lang_navlink3">Door Sensor</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_light.html" data-id="#" id="lang_navlink4">Light</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_motion.html" data-id="#" id="lang_navlink5">Motion Detector</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_plug.html" data-id="#" id="lang_navlink6">Plug</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_shock.html" data-id="#" id="lang_navlink7">Shock Sensor</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_smoke.html" data-id="#" id="lang_navlink8">Smoke Sensor</a>
+                                    </li>
+                                    <li>
+                                        <a href="product_weather.html" data-id="#" id="lang_navlink9">Weather</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-id="scenario" id="lang_navlink10">Scenario</a>
+                            </li>
+                            <li>
+                                <a href="#" data-id="app" id="lang_navlink11">APP</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">EN - English<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" onclick="chg_lang(0)">TW - 繁體中文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="chg_lang(1)">EN - English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="chg_lang(2)">JP - 日本語</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order">Order</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!--// End Navbar -->
+        </header>
+        <div id="carousel-example-generic" class="carousel-fade carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/slider_temp_1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <!-- 若需要可放文字 -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider_example_2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <!-- 若需要可放文字 -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider_example_3.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <!-- 若需要可放文字 -->
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+        </div>
+        <!--// End Carousel -->
 
-        <p class="view"><a href="https://github.com/darknessrain/ripple">View the Project on GitHub <small>darknessrain/ripple</small></a></p>
+        <section id="content-2-1" class="content-block content-2-1 bg-concrete">
+            <div id="intro" class="container text-center">
+                <h2 id="lang_smarthomeseries">Smart Home Series </h2>
+                <hr>
+                <h3 id="lang_smarthomeseries_cont">Urban lifestyle, home, products and compatible with <strong>Amazon Echo</strong></h3><br>
+                <img src="images/ripple/labals_3.png" class="img-responsive center-block labal_desktop">
+                <img src="images/ripple/labals_3_mobile.png" class="img-responsive center-block labal_mobile">
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <section id="features">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <img src="images/ripple/icon_check.png" class="center-block img-responsive">
+                  <p id="lang_ripple_icon_cont">Ripple is extremely easy and quick to set up</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="images/ripple/icon_line.png" class="center-block img-responsive">
+                  <p id="lang_nowireinstall_cont">No wiring installation required</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="images/ripple/icon_wifi.png" class="center-block img-responsive">
+                  <p id="lang_btsmart_cont">Bluetooth Smart connectivity and long battery life</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="images/ripple/icon_schedule.png" class="center-block img-responsive">
+                  <p id="lang_control_cont">Control, schedule, monitor, check status and create events with one APP</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="content-block gallery-1 gallery-1-1">
+            <div class="container">
+                <div class="underlined-title">
+                    <h1 id="lang_products">Products</h1>
+                    <hr>
+                    <h2 id="lang_products_cont">CENTRAL and a bunch of smart gadgets are happy to help  </h2>
+                </div>
+                <!-- /.gallery-filter -->
+                <div class="row">
+                    <div class="isotope-gallery-container">
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_1.jpg" class="img-responsive" alt="1st gallery Thumb">
+                                    <a href="product_central.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_central">CENTRAL</h5>
+                                    <p id="lang_central_cont">A communication center to link up with smart home products and could system</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_2.jpg" class="img-responsive" alt="2nd gallery Thumb">
+                                    <a href="product_door.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_door">DOOR</h5>
+                                    <p id="lang_door_cont">Monitor open/close status of door or window to secure home entrance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_3.jpg" class="img-responsive" alt="3rd gallery Thumb">
+                                    <a href="product_light.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_light">LIGHT</h5>
+                                    <p id="lang_light_cont">Turn on/off and set schedule from anywhere to save energy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper creative nature">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_4.jpg" class="img-responsive" alt="4th gallery Thumb">
+                                    <a href="product_motion.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_motion">MOTION</h5>
+                                    <p id="lang_motion_cont">Detect unusual movement and send notification to mobile phone to lift security level</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper nature">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_5.jpg" class="img-responsive" alt="5th gallery Thumb">
+                                    <a href="product_plug.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_plug">PLUG</h5>
+                                    <p id="lang_plug_cont">Monitor open/close status of door or window to secure home entrance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_6.jpg" class="img-responsive" alt="6th gallery Thumb">
+                                    <a href="product_shock.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_shock">SHOCK</h5>
+                                    <p id="lang_shock_cont">Attach to window and send notification when detect glass breakage or abnormal shock</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_7.jpg" class="img-responsive" alt="7th gallery Thumb">
+                                    <a href="product_smoke.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_smoke">SMOKE</h5>
+                                    <p id="lang_smoke_cont">Detect smoke/heat and send alarm/notification to make sure safety</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/ripple/kit_8.jpg" class="img-responsive" alt="8th gallery Thumb">
+                                    <a href="product_weather.html"><div class="image-overlay"></div></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 id="lang_weather">WEATHER</h5>
+                                    <p id="lang_weather_cont">Collect environment status such as temperature, humidity and air pressure, helps to improve comfort</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.isotope-gallery-container -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section id="scenario" class="content-block content-3-7">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="underlined-title">
+                        <h1 id="lang_Scenario">Scenario</h1>
+                        <hr>
+                        <h2 id="lang_Scenario_cont">daily life, from morning to night</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content-3-10" class="content-block-nopad content-3-10">
+            <div class="image-container col-sm-6 col-xs-12 pull-left">
+                <div class="background-image-holder-scen1">
+</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-xs-12 content">
+                        <h3 id="lang_morning">MORNING</h3>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_light_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_morning_cont">To start a day, Ripple LIGHT  will turn on automatically to wake you up in the morning.</p>
+                        </div>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_plug_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_ripple_plug_aready">Ripple PLUG already turn on the connected electric kettle to boil water for you to make coffee.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.row-->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section id="content-3-11" class="content-block-nopad content-3-11">
+            <div class="image-container col-sm-6 col-xs-12 pull-right">
+                <div class="background-image-holder-scen2"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 content pull-left">
+                        <h3 id="lang_Leave">LEAVE</h3>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_plug_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_Leave_detail_cont">Once you leave home, Ripple PLUG turn off connected appliances to save power for reducing your bill payment.</p>
+                        </div>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_shock_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_shock_detail_cont">Ripple SHOCK detects shock and glass breakage, you’ll get notification if someone is trying to break window.</p>
+                        </div>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_smoke_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_smock_detail_cont">Ripple SMOKE detects smoke and heat, it sends alarm and also notification.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row-->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section id="content-3-10" class="content-block-nopad content-3-10">
+            <div class="image-container col-sm-6 col-xs-12 pull-left">
+                <div class="background-image-holder-scen3">
+</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-xs-12 content">
+                        <h3 id="lang_home">HOME</h3>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_door_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_door_detial_cont1">Ripple DOOR monitor your home entrance, it sends you notification when door is open or you can check status on APP anytime.</p>
+                        </div>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_light_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_door_detial_cont2">When door is open, Ripple DOOR triggers Ripple LIGHT or Ripple PLUG to turn on, your hallway is bright to welcome you home.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.row-->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section id="content-3-11" class="content-block-nopad content-3-11">
+            <div class="image-container col-sm-6 col-xs-12 pull-right">
+                <div class="background-image-holder-scen4">
+</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 content pull-left">
+                        <h3 id="lang_goodnight">GOOD NIGHT</h3>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_plug_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_goodnight_cont1">When it’s time to bed, Ripple PLUG will turn off connected appliance and Ripple LIGHT will dim automatically, just set the schedule in APP.</p>
+                        </div>
+                        <div class="col-xs-2 padding_top_30"><img src="images/ripple/icon_weather_s.png"></div>
+                        <div class="col-xs-10">
+                          <p id="lang_goodnight_cont2">If it gets hot, Ripple WEATHER will tell PLUG to turn on the connected fan, you don’t need to wake up in the middle of night.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row-->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <section id="app" class="app_bg">
+            <div class="container">
+              <div class="col-md-6">
+                <h3 id="lang_app_tl">APP</h3>
+                <p id="lang_app_cont">Control, Status, Scheduling and Setting Events </p>
+              </div>
+              <div class="col-md-6 appview"><img src="images/ripple/img_app.png" class="img-responsive center-block"></div>
+            </div>
+        </section>
+
+        <footer class="content_nopad bg_deepocean">
+            <div class="container footer_1-1">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="images/logo.png" class="btm-brand-img img-responsive">
+                        <h2  id="lang_footer_slogan">Smart Life, Smart Living</h2>
+                        <p class="footer_descript" id="lang_footer_subtitle">EQL brings you an easier and smarter lifestyle</p>
+                        <p class="footer_descript" id="lang_footer_contactmail">Contact Us: <a href="mailto:contact@eqltech.com">contact@eqltech.com</a></p>
+                        <ul class="snBtn">
+                            <li>
+                                <a href="https://www.facebook.com/eqltech/" target="_blank">
+                                    <img src="images/fb.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/eql" target="_blank">
+                                    <img src="images/linkedin.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 id="lang_footer_shortcuts">Shortcuts</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#" id="lang_footer_EQL">EQL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_Homie">Homie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_ripple">Ripple</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_essence">Essence</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_pcstick">PC Stick</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 id="lang_footer_service">Service</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#" id="lang_footer_shop">Online Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_FAQ">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="lang_footer_contactus">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 id="lang_footer_seenenough">Seen Enough?</h4>
+                                <a href="#" target="_blank" class="btn btn-block button" id="lang_footer_buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </footer>
+        <div id="gotop">^
+            <br>Top
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+		  $(window).scroll(function(){
+		  var win_h = $(document).scrollTop();
+		  if(win_h >= $('.navbar').height()){
+		  $('.navbar').addClass('fixed-strip');
+		  }else{
+		  $('.navbar').removeClass('fixed-strip');
+		  }
+		  });
+		</script>
+        <script type="text/javascript">
+		  $(function(){
+
+			  $("#gotop").click(function(){
+				  jQuery("html,body").animate({
+					  scrollTop:0
+				  },1000);
+			  });
+			  $(window).scroll(function() {
+				  if ( $(this).scrollTop() > 300){
+					  $('#gotop').fadeIn("fast");
+				  } else {
+					  $('#gotop').stop().fadeOut("fast");
+				  }
+			  });
 
 
-        <ul>
-          <li><a href="https://github.com/darknessrain/ripple/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/darknessrain/ripple/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/darknessrain/ripple">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			 var $body = $('html,body');
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+		  $('.nav li a').click(function(){
+			  var location = $(this).data('id').toLowerCase();
+			  $body.animate({scrollTop: $("#"+location).offset().top}, {duration:1200});
+			  return false;
+			});
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+		  });
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/darknessrain">darknessrain</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+		  </script>
+      <script type="text/javascript" src="js/J_S_Multi_language_LT_v0.9.js"></script>
+    </body>
 </html>
