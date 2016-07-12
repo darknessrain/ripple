@@ -7,7 +7,7 @@
 // 呼叫使用javascript 呼叫 bootstrap Tab 以切換個產品介紹分頁
 
 // 切換Tab
-<script language="javascript">
+
 
 $(document).ready(function(){
 
