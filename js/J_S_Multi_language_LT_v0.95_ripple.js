@@ -26,7 +26,7 @@ function chg_lang(lang_index){
       var x =document.cookie;
       console.log(x);
 			//更改標題文字
-      changeWebTitle(lang_index);
+      //changeWebTitle(lang_index);
 
       //更改BODY 語系標籤
       changeCSSTag_Multi_Lang(lang_index);
@@ -143,7 +143,7 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('lang_footer_subtitle').innerHTML = arr[lang_index].lang_footer_subtitle;
   document.getElementById('lang_footer_contactmail').innerHTML = arr[lang_index].lang_footer_contactmail;
   document.getElementById('lang_footer_shortcuts').innerHTML = arr[lang_index].lang_footer_shortcuts;
-  document.getElementById('lang_footer_EQLs').innerHTML = arr[lang_index].lang_footer_EQLs;
+  document.getElementById('lang_footer_EQL').innerHTML = arr[lang_index].lang_footer_EQL;
   document.getElementById('lang_footer_Homie').innerHTML = arr[lang_index].lang_footer_Homie;
   document.getElementById('lang_footer_ripple').innerHTML = arr[lang_index].lang_footer_ripple;
   document.getElementById('lang_footer_essence').innerHTML = arr[lang_index].lang_footer_essence;
