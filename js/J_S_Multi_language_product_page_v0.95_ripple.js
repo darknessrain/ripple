@@ -18,11 +18,11 @@ function changeBSTab(tab_name){
 //  if (tab_index==null){
 //    tab_index=0;
 //  }
-
+ var tabx=3;
   console.log(tab_name);
       //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
       $('.nav-tabs a:last').tab('show') ;
-
+      $('.nav-tabs li:eq('+tabx+') a').tab('show')
 }
 
 
