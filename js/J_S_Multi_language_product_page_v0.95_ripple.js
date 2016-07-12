@@ -20,8 +20,8 @@ function changeBSTab(tab_name){
 //  }
 
   console.log(tab_name);
-      $('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
-
+      //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
+      $('.nav-tabs a:last').tab('show') ;
 
 }
 
