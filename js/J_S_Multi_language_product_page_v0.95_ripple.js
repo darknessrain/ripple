@@ -54,12 +54,8 @@ function SwitchFromTabCode(){
        console.log(ex_url);
       //取得問號之後的值
       var temp = ex_url.split("?");
-      console.log(temp);
+      console.log(temp[1]);
 
-  if(query_string.tabcode!=null){
-
-      changeBSTab(query_string.tabcode);
-  }
 
 
 }
