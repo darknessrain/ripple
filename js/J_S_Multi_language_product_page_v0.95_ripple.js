@@ -7,14 +7,20 @@
 // 呼叫使用javascript 呼叫 bootstrap Tab 以切換個產品介紹分頁
 
 // 切換Tab
-function changeBSTab(tab_index){
 
-  if (tab_index==null){
-    tab_index=0;
-  }
+$(document).ready(function(){
 
-  console.log(tab_index);
-      $('.nav-tabs a[href="#' + tab_index + '"]').tab('show');
+
+});
+
+function changeBSTab(tab_name){
+
+//  if (tab_index==null){
+//    tab_index=0;
+//  }
+
+  console.log(tab_name);
+      $('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
 
 
 }
