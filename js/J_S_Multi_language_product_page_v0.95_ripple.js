@@ -56,7 +56,11 @@ function SwitchFromTabCode(){
       var temp = ex_url.split("?");
       console.log(temp[1]);
       eval(temp[1]);
-      console.log(tabcode);
+
+      if(tabcode!=null){
+
+        changeBSTab(tabcode);
+      }
 
 
 
