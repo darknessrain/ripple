@@ -7,22 +7,69 @@
 // 呼叫使用javascript 呼叫 bootstrap Tab 以切換個產品介紹分頁
 
 // 切換Tab
+<script language="javascript">
 
 $(document).ready(function(){
 
 
+
+
 });
 
-function changeBSTab(tab_name){
 
-//  if (tab_index==null){
-//    tab_index=0;
-//  }
- var tabx=3;
-  console.log(tab_name);
+
+// onload 判斷該啟動哪個tab
+
+window.onload=SwitchFromTabCode();
+
+function SwitchFromTabCode(){
+
+  // 萃取網址後面的參數
+  var QueryString = function () {
+    // This function is anonymous, is executed immediately and
+    // the return value is assigned to QueryString!
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+          // If first entry with this name
+      if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+      } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+        query_string[pair[0]] = arr;
+          // If third or later entry with this name
+      } else {
+        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+      }
+    }
+    return query_string;
+  }();
+
+  if(query_string.tabcode!=null){
+
+      changeBSTab(query_string.tabcode);
+  }
+
+
+}
+
+
+
+
+// 切換tab
+function changeBSTab(tab_index){
+
+  if (tab_index==null){
+    tab_index=0;
+    }
+
+  console.log(tab_index);
       //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
       //$('.nav-tabs a:last').tab('show') ;
-      $('.nav-tabs li:eq('+tabx+') a').tab('show')
+      $('.nav-tabs li:eq('+tab_index+') a').tab('show')
 }
 
 
