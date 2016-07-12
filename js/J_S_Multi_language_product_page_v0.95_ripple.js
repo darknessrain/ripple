@@ -14,8 +14,8 @@ function changeBSTab(tab_index){
   }
 
   console.log(tab_index);
+      $('.nav-tabs a[href="#' + tab_index + '"]').tab('show');
 
-  $('#myTab li:eq(tab_index) a').tab('show');
 
 }
 
