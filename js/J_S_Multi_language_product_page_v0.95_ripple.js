@@ -25,7 +25,7 @@ window.onload=SwitchFromTabCode();
 function SwitchFromTabCode(){
 
   // 萃取網址後面的參數
-  var QueryString = function () {
+/*  var QueryString = function () {
     // This function is anonymous, is executed immediately and
     // the return value is assigned to QueryString!
     var query_string = {};
@@ -47,7 +47,14 @@ function SwitchFromTabCode(){
     }
     return query_string;
       console.log(query_string);
-  }();
+  }();*/
+
+  //URL
+      var ex_url = location.href;
+       console.log(ex_url);
+      //取得問號之後的值
+      var temp = ex_url.split("?");
+      console.log(temp);
 
   if(query_string.tabcode!=null){
 
