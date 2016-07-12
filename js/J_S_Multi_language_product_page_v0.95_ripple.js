@@ -47,7 +47,7 @@ function SwitchFromTabCode(){
     }
     return query_string;
   }();
-  console.log(query_string.tabecode);
+  console.log(query_string.tabcode);
   if(query_string.tabcode!=null){
 
       changeBSTab(query_string.tabcode);
