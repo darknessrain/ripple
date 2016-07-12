@@ -55,6 +55,7 @@ function SwitchFromTabCode(){
       //取得問號之後的值
       var temp = ex_url.split("?");
       console.log(temp[1]);
+      eval(temp[1]);
       console.log(tabcode);
 
 
