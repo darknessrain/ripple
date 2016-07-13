@@ -22,6 +22,8 @@ function chg_productlang(lang_index){
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
   console.log(lang_index);
+
+  updateLanguageByLangCode();
   changeNavBarUIWording(lang_index);
 
 
