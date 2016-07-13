@@ -24,7 +24,7 @@ function chg_productlang(lang_index){
   console.log(lang_index);
   changePNavBarUIWording(lang_index);
 
-  
+
         //讀取外部JSON文件
         var xmlhttp = new XMLHttpRequest();
         var url = "mlang_products.txt";
@@ -126,7 +126,7 @@ function changePNavBarUIWording(lang_index){
     //更改Drondown UI 語系顯示
     //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
 
-    document.getElementById('change_dropdown_product_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
+    document.getElementById('change_dropdown_product_title2').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
 
     return;
 }
@@ -377,6 +377,34 @@ function changeAllProductPagesUIWording(myArr_products,lang_index){
   document.getElementById('lang_p_weather_spec_hires_cont').innerHTML = arr[lang_index].lang_p_weather_spec_hires_cont;
 
  return;
+}
+
+
+
+function detectUserLang(){
+
+    var tempLang = window.navigator.userLanguage || window.navigator.language ;
+    var currentBrowserLang = tempLang.toLowerCase();
+    console.log(currentBrowserLang);
+
+    switch (currentBrowserLang) {
+      case "zh-tw":
+            chg_productlang(0);
+        break;
+      case "zh-cn":
+            chg_productlang(0);
+        break;
+      case "zh-hk":
+            chg_productlang(0);
+        break;
+      case "ja":
+            chg_productlang(2);
+        break;
+
+      default:
+            chg_productlang(1);
+        break;
+    }
 }
 
 
