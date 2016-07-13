@@ -22,7 +22,7 @@ function chg_productlang(lang_index){
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
   console.log(lang_index);
-  changePNavBarUIWording(lang_index);
+  changeNavBarUIWording(lang_index);
 
 
         //讀取外部JSON文件
@@ -121,14 +121,14 @@ function updateLanguageByLangCode(){
 
 
 
-function changePNavBarUIWording(lang_index){
+function changeNavBarUIWording(lang_index){
 
-    //更改Drondown UI 語系顯示
-    //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
+  //更改Drondown UI 語系顯示
+  //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
 
-    document.getElementById('change_dropdown_product_title2').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
+  document.getElementById('change_dropdown_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
 
-    return;
+  return;
 }
 
 
@@ -407,8 +407,14 @@ function detectUserLang(){
     }
 }
 
+//=====文字儲存區======
+//多語系body標籤
+Multi_Lang_Tag = new Array();
+Multi_Lang_Tag[0]="tw";
+Multi_Lang_Tag[1]="eng";
+Multi_Lang_Tag[2]="jp";
 
-//Multi_Lang_Wording_p 供介面顯示
+//Multi_Lang_Wording 供介面顯示
 Multi_Lang_Wording = new Array();
 Multi_Lang_Wording[0]="TW - 繁體中文";
 Multi_Lang_Wording[1]="EN - English";
