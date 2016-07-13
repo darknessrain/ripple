@@ -17,11 +17,37 @@ $(document).ready(function(){
 });
 
 
+function chg_productlang(lang_index){
+
+  //更改Navbar文件
+  console.log("start Change Product Lanuange by Dropdown");
+  changePNavBarUIWording(lang_index);
+
+  if (lang_code_current!=null){
+        //讀取外部JSON文件
+        var xmlhttp = new XMLHttpRequest();
+        var url = "mlang_products.txt";
+
+        xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var myArr_products = JSON.parse(xmlhttp.responseText);
+            console.log(myArr_products);
+            changeAllProductPagesUIWording(myArr_products,lang_index);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+  }
+
+
+}
+
+
 
 // onload 判斷該啟動哪個tab
 
 window.onload=SwitchFromTabCode();
-window.onload=updateLanguageByLangCode();
+
 
 function SwitchFromTabCode(){
 
@@ -37,6 +63,8 @@ function SwitchFromTabCode(){
       if(tabcode!=null){
 
         changeBSTab(tabcode);
+
+        updateLanguageByLangCode();
       }
 
 
@@ -85,16 +113,28 @@ function updateLanguageByLangCode(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
-
-
-
-
 }
+
+
+
+function changePNavBarUIWording(lang_index){
+
+    //更改Drondown UI 語系顯示
+    //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
+
+    document.getElementById('change_dropdown_product_title').innerHTML =  Multi_Lang_Wording_p[lang_index]+'<b class="caret"></b>';
+
+    return;
+}
+
+
+
+
 
 
 function changeAllProductPagesUIWording(myArr_products,lang_index){
 
-  document.getElementById('lang_p_central_').innerHTML = arr[lang_index].lang_p_central_;
+  document.getElementById('lang_p_central_1').innerHTML = arr[lang_index].lang_p_central_1;
   /*
   document.getElementById('lang_p_central_').innerHTML = arr[lang_index].lang_p_central_;
   document.getElementById('lang_p_central_').innerHTML = arr[lang_index].lang_p_central_;
@@ -110,3 +150,10 @@ function changeAllProductPagesUIWording(myArr_products,lang_index){
   */
 
 }
+
+
+//Multi_Lang_Wording_p 供介面顯示
+Multi_Lang_Wording_p = new Array();
+Multi_Lang_Wording_p[0]="TW - 繁體中文";
+Multi_Lang_Wording_p[1]="EN - English";
+Multi_Lang_Wording_p[2]="JP - 日本語";
