@@ -7,7 +7,7 @@
         <meta name="description" content="EQL brings you an easier and smarter lifestyle">
         <link rel="shortcut icon" href="images/favicon.ico" />
         <link href='https://fonts.googleapis.com/css?family=Palanquin:100' rel='stylesheet' type='text/css'>
-        <title>EQL - Ripple</title>
+        <title id="lang_title_products">EQL - Ripple</title>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -45,42 +45,42 @@
                                 <a href="index.html#intro" data-id="intro" id="lang_navlink1">Intro</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="lang_navlink2">Products <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink2" onclick="changeBSTab(0)" >Central</a>
+                                        <a href="#" data-id="#" id="lang_navlink3" onclick="changeBSTab(0)" >Central</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink3" onclick="changeBSTab(1)">Door Sensor</a>
+                                        <a href="#" data-id="#" id="lang_navlink4" onclick="changeBSTab(1)">Door Sensor</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink4" onclick="changeBSTab(2)">Light</a>
+                                        <a href="#" data-id="#" id="lang_navlink5" onclick="changeBSTab(2)">Light</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#"  id="lang_navlink5" onclick="changeBSTab(3)">Motion Detector</a>
+                                        <a href="#" data-id="#"  id="lang_navlink6" onclick="changeBSTab(3)">Motion Detector</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink6" onclick="changeBSTab(4)">Plug</a>
+                                        <a href="#" data-id="#" id="lang_navlink7" onclick="changeBSTab(4)">Plug</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink7" onclick="changeBSTab(5)">Shock Sensor</a>
+                                        <a href="#" data-id="#" id="lang_navlink8" onclick="changeBSTab(5)">Shock Sensor</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink8" onclick="changeBSTab(6)">Smoke Sensor</a>
+                                        <a href="#" data-id="#" id="lang_navlink9" onclick="changeBSTab(6)">Smoke Sensor</a>
                                     </li>
                                     <li>
-                                        <a href="#" data-id="#" id="lang_navlink9" onclick="changeBSTab(7)">Weather</a>
+                                        <a href="#" data-id="#" id="lang_navlink10" onclick="changeBSTab(7)">Weather</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="index.html#scenario" data-id="scenario" id="lang_navlink10">Scenario</a>
+                                <a href="index.html#scenario" data-id="scenario" id="lang_navlink11">Scenario</a>
                             </li>
                             <li>
-                                <a href="index.html#app" data-id="app"  id="lang_navlink11">APP</a>
+                                <a href="index.html#app" data-id="app"  id="lang_navlink12">APP</a>
                             </li>
                             <li>
-                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order">Order</button>
+                                <button type="button" value="order" id="lang_nav_order_btn" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order">Order</button>
                             </li>
                         </ul>
                     </div>
@@ -129,7 +129,7 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3 is="lang_tl_central">Central</h3>
+                                <h3 id="lang_tl_central">Central</h3>
                                 <img src="images/ripple/icon_central.png" class="img-responsive">
                                 <br><br>
                                   <ul>
@@ -139,7 +139,7 @@
                                     <li id="lang_p_central_breif4">No screws, no wiring , it’s just a few steps to create a smart living.</li>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_purchase_btn">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_central_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -148,38 +148,38 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                           <thead>
                           <tr>
-                              <th class="item_name">Item</th>
-                              <th class="item_price">Description</th>
+                              <th class="item_name" id="lang_p_central_spec_item">Item</th>
+                              <th class="item_price" id="lang_p_central_spec_Description">Description</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr class="cart_item">
-                              <td class="item_name">Bluetooth</td>
-                              <td class="item_price">Bluetooth 4.0 Smart</td>
+                              <td class="item_name"  id="lang_p_central_spec_bt">Bluetooth</td>
+                              <td class="item_price" id="lang_p_central_spec_bt_cont">Bluetooth 4.0 Smart</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">WiFi</td>
-                              <td class="item_price">2.4GHz, 802.11b/g/n</td>
+                              <td class="item_name" id="lang_p_central_spec_wifi" >WiFi</td>
+                              <td class="item_price" id="lang_p_central_spec_wifi_cont">2.4GHz, 802.11b/g/n</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Input Power</td>
-                              <td class="item_price">DC 5V/1A(Micro USB)</td>
+                              <td class="item_name"  id="lang_p_central_spec_power">Input Power</td>
+                              <td class="item_price"  id="lang_p_central_spec_power_cont">DC 5V/1A(Micro USB)</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Transmission Range</td>
-                              <td class="item_price">25m</td>
+                              <td class="item_name" id="lang_p_central_spec_trans">Transmission Range</td>
+                              <td class="item_price" id="lang_p_central_spec_trans_cont">25m</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">WiFi Security</td>
-                              <td class="item_price">OPEN, WEP, WPA, WPA2, WPA+WPA2</td>
+                              <td class="item_name"  id="lang_p_central_spec_wifisecur">WiFi Security</td>
+                              <td class="item_price"  id="lang_p_central_spec_wifisecur_cont">OPEN, WEP, WPA, WPA2, WPA+WPA2</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">WiFi Encryption</td>
-                              <td class="item_price">CCMP/AES, TKIP,TKIP+CCMP/AES</td>
+                              <td class="item_name"  id="lang_p_central_spec_encry">WiFi Encryption</td>
+                              <td class="item_price"  id="lang_p_central_spec_encry_cont">CCMP/AES, TKIP,TKIP+CCMP/AES</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Operation  Temperature</td>
-                              <td class="item_price"> 0°C ~ 40°C</td>
+                              <td class="item_name"  id="lang_p_central_spec_temperature">Operation  Temperature</td>
+                              <td class="item_price"  id="lang_p_central_spec_temperature_cont"> 0°C ~ 40°C</td>
                             </tr>
 
 
@@ -195,17 +195,17 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Door Sensor</h3>
+                                <h3 id="lang_tl_doorsensor">Door Sensor</h3>
                                 <img src="images/ripple/icon_door.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>Attach to door or window, it knows open/close status and send notification to you.</li><br>
-                                    <li>DOOR monitoring your home entrance and take record with time.</li><br>
-                                    <li>Battery is included and it last 12 months.</li>
+                                    <li id="lang_p_doorsensor_breif1">Attach to door or window, it knows open/close status and send notification to you.</li><br>
+                                    <li id="lang_p_doorsensor_breif2">DOOR monitoring your home entrance and take record with time.</li><br>
+                                    <li id="lang_p_doorsensor_breif3">Battery is included and it last 12 months.</li>
                                     <br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_doorsensor_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -214,38 +214,38 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_doorsensor_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_doorsensor_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Power Supply</td>
-                                <td class="item_price">ER14250 1/2AA, 3.6VDC</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_power">Power Supply</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_power_cont">ER14250 1/2AA, 3.6VDC</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Battery Life</td>
-                                <td class="item_price">12 Months</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_batt">Battery Life</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_batt_cont">12 Months</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Detectable Gap</td>
-                                <td class="item_price">Max 20mm</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_gap">Detectable Gap</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_gap_cont">Max 20mm</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Transmission Range</td>
-                                <td class="item_price">25m</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_trans">Transmission Range</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_trans_cont">25m</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Temperature</td>
-                                <td class="item_price">0 ~ 40˚C</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_temper">Operation Temperature</td>
+                                <td class="item_price" id="lang_p_doorsensor_spec_temper_cont">0 ~ 40˚C</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Humidity</td>
-                                <td class="item_price">20 ~ 90%RH</td>
+                                <td class="item_name" id="lang_p_doorsensor_spec_humd">Operation Humidity</td>
+                                <td class="item_price"id="lang_p_doorsensor_spec_humd_cont">20 ~ 90%RH</td>
                               </tr>
 
 
@@ -261,17 +261,17 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Light</h3>
+                                <h3 id="lang_tl_light">Light</h3>
                                 <img src="images/ripple/icon_light.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>Remote control to turn LIGHT on/off for saving power.</li>
-                                    <li>Adjustable brightness to fit your space.</li><br>
-                                    <li>It also works well with other Ripple gadgets, for example: DOOR trigger to turn on LIGHT.</li><br>
-                                    <li>Set schedule to turn on/off LIGHT automatically to fit your daily life.</li><br>
+                                    <li id="lang_p_light_breif1">Remote control to turn LIGHT on/off for saving power.</li>
+                                    <li id="lang_p_light_breif2">Adjustable brightness to fit your space.</li><br>
+                                    <li id="lang_p_light_breif3">It also works well with other Ripple gadgets, for example: DOOR trigger to turn on LIGHT.</li><br>
+                                    <li id="lang_p_light_breif4">Set schedule to turn on/off LIGHT automatically to fit your daily life.</li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_light_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -280,50 +280,50 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_light_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_light_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_light_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_light_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Input Power</td>
-                                <td class="item_price">EU: 240 VAC/50Hz, US: 120 VAC/60Hz</td>
+                                <td class="item_name" id="lang_p_light_spec_power">Input Power</td>
+                                <td class="item_price" id="lang_p_light_spec_power_cont">EU: 240 VAC/50Hz, US: 120 VAC/60Hz</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Watte</td>
-                                <td class="item_price">10W</td>
+                                <td class="item_name" id="lang_p_light_spec_watt">Watte</td>
+                                <td class="item_price" id="lang_p_light_spec_watt_cont">10W</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Bulb Socket</td>
-                                <td class="item_price">EU/E27, US/E26</td>
+                                <td class="item_name" id="lang_p_light_spec_bulb">Bulb Socket</td>
+                                <td class="item_price" id="lang_p_light_spec_bulb_cont">EU/E27, US/E26</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Coverage</td>
-                                <td class="item_price">180 degree</td>
+                                <td class="item_name" id="lang_p_light_spec_cover">Coverage</td>
+                                <td class="item_price" id="lang_p_light_spec_cover_cont">180 degree</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Luminous flux </td>
-                                <td class="item_price">Cool White: 800lm / Warm White: 720lm</td>
+                                <td class="item_name" id="lang_p_light_spec_lumi">Luminous flux </td>
+                                <td class="item_price" id="lang_p_light_spec_lumi_cont">Cool White: 800lm / Warm White: 720lm</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Dimmable</td>
-                                <td class="item_price">0% ~ 100%</td>
+                                <td class="item_name" id="lang_p_light_spec_dim">Dimmable</td>
+                                <td class="item_price" id="lang_p_light_spec_dim_cont">0% ~ 100%</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Life</td>
-                                <td class="item_price">> 25000 hours</td>
+                                <td class="item_name" id="lang_p_light_spec_life">Life</td>
+                                <td class="item_price" id="lang_p_light_spec_life_cont">> 25000 hours</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Energy Efficiency</td>
-                                <td class="item_price">> 70lm/1W</td>
+                                <td class="item_name" id="lang_p_light_spec_ee">Energy Efficiency</td>
+                                <td class="item_price" id="lang_p_light_spec_ee_cont">> 70lm/1W</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Transmission Range</td>
-                                <td class="item_price">25m</td>
+                                <td class="item_name" id="lang_p_light_spec_trans">Transmission Range</td>
+                                <td class="item_price" id="lang_p_light_spec_trans_cont">25m</td>
                               </tr>
 
 
@@ -339,16 +339,16 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Motion Detector</h3>
+                                <h3 id="lang_tl_motion">Motion Detector</h3>
                                 <img src="images/ripple/icon_motion.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>MOTION detects unexpected movements and send you notification when you are not home.</li><br>
-                                    <li>It also work to trigger other Ripple gadgets, for example: turn on LIGHT or trigger SMOKE alarm.</li><br>
-                                    <li>Battery is included and it lasts 8-12 months.</li><br>
+                                    <li id="lang_p_motion_breif1">MOTION detects unexpected movements and send you notification when you are not home.</li><br>
+                                    <li id="lang_p_motion_breif2">It also work to trigger other Ripple gadgets, for example: turn on LIGHT or trigger SMOKE alarm.</li><br>
+                                    <li id="lang_p_motion_breif3">Battery is included and it lasts 8-12 months.</li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_motion_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -357,38 +357,38 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_motion_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_motion_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_motion_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_motion_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Power Supply</td>
-                                <td class="item_price">ER14250 1/2AA, 3.6VDC</td>
+                                <td class="item_name" id="lang_p_motion_spec_pow">Power Supply</td>
+                                <td class="item_price" id="lang_p_motion_spec_pow_cont">ER14250 1/2AA, 3.6VDC</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Battery Life</td>
-                                <td class="item_price">8 ~ 12 Months</td>
+                                <td class="item_name" id="lang_p_motion_spec_batt">Battery Life</td>
+                                <td class="item_price" id="lang_p_motion_spec_batt_cont">8 ~ 12 Months</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Detection Area</td>
-                                <td class="item_price">160∘and 12m(recommanded height: 2 ~ 2.4m) </td>
+                                <td class="item_name" id="lang_p_motion_spec_da">Detection Area</td>
+                                <td class="item_price" id="lang_p_motion_spec_da_cont">160∘and 12m(recommanded height: 2 ~ 2.4m) </td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Transmission Range</td>
-                                <td class="item_price">25m</td>
+                                <td class="item_name" id="lang_p_motion_spec_trans">Transmission Range</td>
+                                <td class="item_price" id="lang_p_motion_spec_trans_cont">25m</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Temperature</td>
-                                <td class="item_price">0 ~ 40˚C</td>
+                                <td class="item_name" id="lang_p_motion_spec_temper">Operation Temperature</td>
+                                <td class="item_price" id="lang_p_motion_spec_temper_cont">0 ~ 40˚C</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Humidity</td>
-                                <td class="item_price">20 ~ 90%RH</td>
+                                <td class="item_name" id="lang_p_motion_spec_hum">Operation Humidity</td>
+                                <td class="item_price" id="lang_p_motion_spec_num_cont">20 ~ 90%RH</td>
                               </tr>
                               </tbody>
                             </table>
@@ -402,19 +402,19 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Plug</h3>
+                                <h3 id="lang_tl_plug">Plug</h3>
                                 <img src="images/ripple/icon_plug.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>Remote control the connected appliance to save power.</li><br>
-                                    <li>Set daily schedule to add home automation to your living. </li><br>
-                                    <li>It also works well with other Ripple gadgets, for example: WEATHER trigger PLUG to turn on fan, DOOR trigger PLUG to turn on stand light.</li><br>
-                                    <li>It display power consumption of connected appliance and high light high power consumption equipment.</li><br>
-                                    <li>Input unit of energy charge(kilowatt hour), it helps you to calculate and manage energy bill.
+                                    <li id="lang_p_plug_breif1">Remote control the connected appliance to save power.</li><br>
+                                    <li id="lang_p_plug_breif2">Set daily schedule to add home automation to your living. </li><br>
+                                    <li id="lang_p_plug_breif3">It also works well with other Ripple gadgets, for example: WEATHER trigger PLUG to turn on fan, DOOR trigger PLUG to turn on stand light.</li><br>
+                                    <li id="lang_p_plug_breif4">It display power consumption of connected appliance and high light high power consumption equipment.</li><br>
+                                    <li id="lang_p_plug_breif5">Input unit of energy charge(kilowatt hour), it helps you to calculate and manage energy bill.
                                     </li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_plug_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -423,38 +423,38 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_plug_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_plug_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_plug_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_plug_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Input Power</td>
-                                <td class="item_price">100~120 VAC +/- 10%, 50/60Hz</td>
+                                <td class="item_name" id="lang_p_plug_spec_pow">Input Power</td>
+                                <td class="item_price" id="lang_p_plug_spec_pow_cont">100~120 VAC +/- 10%, 50/60Hz</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Current</td>
-                                <td class="item_price">Normal load - 1200W<br>Full load - 1400W<br>Over load - over 1400W</td>
+                                <td class="item_name" id="lang_p_plug_spec_cur">Current</td>
+                                <td class="item_price" id="lang_p_plug_spec_cur_cont">Normal load - 1200W<br>Full load - 1400W<br>Over load - over 1400W</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Over Load Protection</td>
-                                <td class="item_price">If the load is over 1400W, power will be turned off automatically</td>
+                                <td class="item_name" id="lang_p_plug_spec_oload">Over Load Protection</td>
+                                <td class="item_price" id="lang_p_plug_spec_oload_cont">If the load is over 1400W, power will be turned off automatically</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Transmission Range</td>
-                                <td class="item_price">25m</td>
+                                <td class="item_name" id="lang_p_plug_spec_trans">Transmission Range</td>
+                                <td class="item_price" id="lang_p_plug_spec_trans_cont">25m</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Temperature</td>
-                                <td class="item_price">0 ~ 40˚C</td>
+                                <td class="item_name" id="lang_p_plug_spec_temper">Operation Temperature</td>
+                                <td class="item_price" id="lang_p_plug_spec_temper_cont">0 ~ 40˚C</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Humidity</td>
-                                <td class="item_price">20 ~ 90%RH</td>
+                                <td class="item_name" id="lang_p_plug_spec_hum">Operation Humidity</td>
+                                <td class="item_price" id="lang_p_plug_spec_hum_cont">20 ~ 90%RH</td>
                               </tr>
                               </tbody>
                             </table>
@@ -469,16 +469,16 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Shock Sensor</h3>
+                                <h3 id="lang_tl_shock">Shock Sensor</h3>
                                 <img src="images/ripple/icon_shock.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>Attach SHOCK to window, it detects glass breakage or abnormal shock and send you notification.</li><br>
-                                    <li>It also work to trigger other Ripple gadgets, for example: trigger SMOKE alarm.</li><br>
-                                    <li>Battery is included and it lasts 6 months.</li><br>
+                                    <li id="lang_p_shock_breif1">Attach SHOCK to window, it detects glass breakage or abnormal shock and send you notification.</li><br>
+                                    <li id="lang_p_shock_breif2">It also work to trigger other Ripple gadgets, for example: trigger SMOKE alarm.</li><br>
+                                    <li id="lang_p_shock_breif3">Battery is included and it lasts 6 months.</li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_shock_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -487,34 +487,34 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_shock_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_shock_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_shock_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_shock_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">G-sensor</td>
-                                <td class="item_price">Ultra low-power high performance 3-axes</td>
+                                <td class="item_name" id="lang_p_shock_spec_gsensor">G-sensor</td>
+                                <td class="item_price" id="lang_p_shock_spec_gsensor_cont">Ultra low-power high performance 3-axes</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Power Supply</td>
-                                <td class="item_price">CR2032 Lithium Ion coin cell 3.6VDC</td>
+                                <td class="item_name" id="lang_p_shock_spec_pow">Power Supply</td>
+                                <td class="item_price" id="lang_p_shock_spec_pow_cont">CR2032 Lithium Ion coin cell 3.6VDC</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Battery Life</td>
-                                <td class="item_price">> 6 Months</td>
+                                <td class="item_name" id="lang_p_shock_spec_batt">Battery Life</td>
+                                <td class="item_price" id="lang_p_shock_spec_batt_cont">> 6 Months</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Vibration Sensitivity</td>
-                                <td class="item_price">Adjustable, default value 0.1g ~ 3.8g</td>
+                                <td class="item_name" id="lang_p_shock_spec_var">Vibration Sensitivity</td>
+                                <td class="item_price" id="lang_p_shock_spec_var_cont">Adjustable, default value 0.1g ~ 3.8g</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Transmission Range</td>
-                                <td class="item_price">25m</td>
+                                <td class="item_name" id="lang_p_shock_spec_trans">Transmission Range</td>
+                                <td class="item_price" id="lang_p_shock_spec_trans_cont">25m</td>
                               </tr>
 
                               </tbody>
@@ -530,16 +530,16 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Smoke Sensor</h3>
+                                <h3 id="lang_tl_smoke">Smoke Sensor</h3>
                                 <img src="images/ripple/icon_smoke.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>SMOKE detects smoke and heat, it sends sound alarm and notification to your phone.</li><br>
-                                    <li>It also works well with other Ripple gadgets, for example: SHOCK trigger SMOKE to send sound alarm.</li><br>
-                                    <li>Battery is included, it lasts 12 months.</li><br>
+                                    <li id="lang_p_smoke_breif1">SMOKE detects smoke and heat, it sends sound alarm and notification to your phone.</li><br>
+                                    <li id="lang_p_smoke_breif2">It also works well with other Ripple gadgets, for example: SHOCK trigger SMOKE to send sound alarm.</li><br>
+                                    <li id="lang_p_smoke_breif3">Battery is included, it lasts 12 months.</li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_smoke_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -548,50 +548,50 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                             <thead>
                             <tr>
-                                <th class="item_name">Item</th>
-                                <th class="item_price">Description</th>
+                                <th class="item_name" id="lang_p_smoke_spec_item">Item</th>
+                                <th class="item_price" id="lang_p_smoke_spec_desc">Description</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr class="cart_item">
-                                <td class="item_name">Bluetooth</td>
-                                <td class="item_price">Bluetooth 4.0 Smart</td>
+                                <td class="item_name" id="lang_p_smoke_spec_bt">Bluetooth</td>
+                                <td class="item_price" id="lang_p_smoke_spec_bt_cont">Bluetooth 4.0 Smart</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Power Supply</td>
-                                <td class="item_price">CR123A</td>
+                                <td class="item_name" id="lang_p_smoke_spec_pow">Power Supply</td>
+                                <td class="item_price" id="lang_p_smoke_spec_pow_cont">CR123A</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Battery Life</td>
-                                <td class="item_price">1 year</td>
+                                <td class="item_name" id="lang_p_smoke_spec_batt">Battery Life</td>
+                                <td class="item_price" id="lang_p_smoke_spec_batt_cont">1 year</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Smoke Sensitivity & Alarm Pattern UL217</td>
-                                <td class="item_price">1.31%/ft ~ 2.28%/ft ;Temporal Three Pattern</td>
+                                <td class="item_name" id="lang_p_smoke_spec_sens1">Smoke Sensitivity & Alarm Pattern UL217</td>
+                                <td class="item_price" id="lang_p_smoke_spec_sens1_cont">1.31%/ft ~ 2.28%/ft ;Temporal Three Pattern</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Smoke Sensitivity & Alarm Pattern EN 14604</td>
-                                <td class="item_price">0.105 dB/m ~ 0.156dB/m ;Temporal Three Pattern</td>
+                                <td class="item_name" id="lang_p_smoke_spec_sens2">Smoke Sensitivity & Alarm Pattern EN 14604</td>
+                                <td class="item_price" id="lang_p_smoke_spec_sens2_cont">0.105 dB/m ~ 0.156dB/m ;Temporal Three Pattern</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Smoke Sensitivity UL268</td>
-                                <td class="item_price">Recongized component</td>
+                                <td class="item_name" id="lang_p_smoke_spec_sens3">Smoke Sensitivity UL268</td>
+                                <td class="item_price" id="lang_p_smoke_spec_sens3_cont">Recongized component</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Heat Sensitivity & UL217</td>
-                                <td class="item_price">57°C ~ 65 °C (136°F ~ 149°F) ;Temporal Three Pattern</td>
+                                <td class="item_name" id="lang_p_smoke_spec_htsens1">Heat Sensitivity & UL217</td>
+                                <td class="item_price" id="lang_p_smoke_spec_htsens1_cont">57°C ~ 65 °C (136°F ~ 149°F) ;Temporal Three Pattern</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Heat Sensitivity & EN54-5</td>
-                                <td class="item_price">A2S : 54°C~70°C;Temporal Three Pattern</td>
+                                <td class="item_name" id="lang_p_smoke_spec_htsens2">Heat Sensitivity & EN54-5</td>
+                                <td class="item_price" id="lang_p_smoke_spec_htsens2_cont">A2S : 54°C~70°C;Temporal Three Pattern</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Temperature</td>
-                                <td class="item_price">0 ~ 40˚C</td>
+                                <td class="item_name" id="lang_p_smoke_spec_temper">Operation Temperature</td>
+                                <td class="item_price" id="lang_p_smoke_spec_temper_cont">0 ~ 40˚C</td>
                               </tr>
                               <tr class="cart_item">
-                                <td class="item_name">Operation Humidity</td>
-                                <td class="item_price">10 ~ 85%RH</td>
+                                <td class="item_name" id="lang_p_smoke_spec_hum">Operation Humidity</td>
+                                <td class="item_price" id="lang_p_smoke_spec_hum_cont">10 ~ 85%RH</td>
                               </tr>
                               </tbody>
                             </table>
@@ -606,18 +606,18 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-6">
-                                <h3>Weather</h3>
+                                <h3 id="lang_tl_weather">Weather</h3>
                                 <img src="images/ripple/icon_weather.jpg" class="img-responsive">
                                 <br><br>
                                   <ul>
-                                    <li>WEATHER knows comfort index of your place, including temperature, humidity and atmospheric pressure.</li><br>
-                                    <li>Weather forecast helps you to prepare in advance.</li><br>
-                                    <li>It also works well with other Ripple gadgets, for example: WEATHER trigger PLUG to turn on fan.</li><br>
-                                    <li>Battery is included, it lasts 3 ~ 6 months.
+                                    <li id="lang_p_weather_breif1">WEATHER knows comfort index of your place, including temperature, humidity and atmospheric pressure.</li><br>
+                                    <li id="lang_p_weather_breif2">Weather forecast helps you to prepare in advance.</li><br>
+                                    <li id="lang_p_weather_breif3">It also works well with other Ripple gadgets, for example: WEATHER trigger PLUG to turn on fan.</li><br>
+                                    <li id="lang_p_weather_breif4">Battery is included, it lasts 3 ~ 6 months.
                                     </li><br>
                                   </ul>
                                   <br>
-                                  <a href="#" target="_blank" class="btn btn-block button pro_order">Buy Now</a>
+                                  <a href="#" target="_blank" class="btn btn-block button pro_order" id="lang_p_weather_purchase_btn">Buy Now</a>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -626,46 +626,42 @@
                           <table class="table table-striped table-hover cartTable font16Gr text-left" width="100%" border="0" cellspacing="0">
                           <thead>
                           <tr>
-                              <th class="item_name">Item</th>
-                              <th class="item_price">Description</th>
+                              <th class="item_name" id="lang_p_weather_spec_item">Item</th>
+                              <th class="item_price" id="lang_p_weather_spec_desc">Description</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr class="cart_item">
-                              <td class="item_name">Bluetooth</td>
-                              <td class="item_price">Bluetooth 4.0 Smart</td>
+                              <td class="item_name" id="lang_p_weather_spec_bt">Bluetooth</td>
+                              <td class="item_price" id="lang_p_weather_spec_bt_cont">Bluetooth 4.0 Smart</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Power Supply</td>
-                              <td class="item_price">Two AAA batteries</td>
+                              <td class="item_name" id="lang_p_weather_spec_pow">Power Supply</td>
+                              <td class="item_price" id="lang_p_weather_spec_pow_cont">Two AAA batteries</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Battery Life</td>
-                              <td class="item_price">3 ~ 6 Months</td>
+                              <td class="item_name" id="lang_p_weather_spec_batt">Battery Life</td>
+                              <td class="item_price" id="lang_p_weather_spec_batt_cont">3 ~ 6 Months</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Detectable Gap</td>
-                              <td class="item_price">Max 20mm</td>
+                              <td class="item_name" id="lang_p_weather_spec_trans">Transmission Range</td>
+                              <td class="item_price" id="lang_p_weather_spec_trans_cont">25m</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Transmission Range</td>
-                              <td class="item_price">25m</td>
+                              <td class="item_name" id="lang_p_weather_spec_temper">Operation Temperature</td>
+                              <td class="item_price" id="lang_p_weather_spec_temper_cont">-20ºC ~ +85ºC</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Operation Temperature</td>
-                              <td class="item_price">-20ºC ~ +85ºC</td>
+                              <td class="item_name" id="lang_p_weather_spec_hum">Operation Humidity</td>
+                              <td class="item_price" id="lang_p_weather_spec_hum_cont">0 ~ 90% RH</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Operation Humidity</td>
-                              <td class="item_price">0 ~ 90% RH</td>
+                              <td class="item_name" id="lang_p_weather_spec_press">Pressure Sensing Range </td>
+                              <td class="item_price" id="lang_p_weather_spec_press_cont">260 ~ 1260 mbar</td>
                             </tr>
                             <tr class="cart_item">
-                              <td class="item_name">Pressure Sensing Range </td>
-                              <td class="item_price">260 ~ 1260 mbar</td>
-                            </tr>
-                            <tr class="cart_item">
-                              <td class="item_name">High Resolution Mode</td>
-                              <td class="item_price">0.020 mbar RMS</td>
+                              <td class="item_name" id="lang_p_weather_spec_hires">High Resolution Mode</td>
+                              <td class="item_price" id="lang_p_weather_spec_hires_cont">0.020 mbar RMS</td>
                             </tr>
 
                             </tbody>
