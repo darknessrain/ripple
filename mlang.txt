@@ -1,7 +1,7 @@
 ﻿[
   {
     "lang_title":"歡迎來到EQL - Ripple",
-    "lang_navlink1":"Intro",
+    "lang_navlink1":"特色",
     "lang_navlink2":"產品",
     "lang_navlink3":"Central",
     "lang_navlink4":"門感測器",
