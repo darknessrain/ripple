@@ -122,7 +122,7 @@ function changePNavBarUIWording(lang_index){
     //更改Drondown UI 語系顯示
     //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
 
-    document.getElementById('change_dropdown_product_title').innerHTML =  Multi_Lang_Wording_p[lang_index]+'<b class="caret"></b>';
+    document.getElementById('change_dropdown_product_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
 
     return;
 }
@@ -377,7 +377,7 @@ function changeAllProductPagesUIWording(myArr_products,lang_index){
 
 
 //Multi_Lang_Wording_p 供介面顯示
-Multi_Lang_Wording_p = new Array();
-Multi_Lang_Wording_p[0]="TW - 繁體中文";
-Multi_Lang_Wording_p[1]="EN - English";
-Multi_Lang_Wording_p[2]="JP - 日本語";
+Multi_Lang_Wording = new Array();
+Multi_Lang_Wording[0]="TW - 繁體中文";
+Multi_Lang_Wording[1]="EN - English";
+Multi_Lang_Wording[2]="JP - 日本語";
