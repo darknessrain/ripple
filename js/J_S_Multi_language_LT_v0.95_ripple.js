@@ -18,7 +18,7 @@
 
 
 
-
+// 切換語系
 function chg_lang(lang_index){
 
       //寫入Cookie
@@ -99,6 +99,7 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('lang_navlink9').innerHTML = arr[lang_index].lang_navlink9;
   document.getElementById('lang_navlink10').innerHTML = arr[lang_index].lang_navlink10;
   document.getElementById('lang_navlink11').innerHTML = arr[lang_index].lang_navlink11;
+  document.getElementById('lang_navlink12').innerHTML = arr[lang_index].lang_navlink12;
   document.getElementById('lang_smarthomeseries').innerHTML = arr[lang_index].lang_smarthomeseries;
   document.getElementById('lang_smarthomeseries_cont').innerHTML = arr[lang_index].lang_smarthomeseries_cont;
   document.getElementById('lang_ripple_icon_cont').innerHTML = arr[lang_index].lang_ripple_icon_cont;
