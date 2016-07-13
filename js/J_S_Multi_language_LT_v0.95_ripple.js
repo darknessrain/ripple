@@ -108,11 +108,14 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('lang_control_cont').innerHTML = arr[lang_index].lang_control_cont;
   document.getElementById('lang_products').innerHTML = arr[lang_index].lang_products;
   document.getElementById('lang_products_cont').innerHTML = arr[lang_index].lang_products_cont;
-  document.getElementById('lang_central').innerHTML = arr[lang_index].lang_central_cont;
-  document.getElementById('lang_door').innerHTML = arr[lang_index].lang_door_cont;
+  document.getElementById('lang_central').innerHTML = arr[lang_index].lang_central;
+  document.getElementById('lang_central_cont').innerHTML = arr[lang_index].lang_central_cont;
+  document.getElementById('lang_door').innerHTML = arr[lang_index].lang_door;
+  document.getElementById('lang_door_cont').innerHTML = arr[lang_index].lang_door_cont;
   document.getElementById('lang_light').innerHTML = arr[lang_index].lang_light;
   document.getElementById('lang_light_cont').innerHTML = arr[lang_index].lang_light_cont;
-  document.getElementById('lang_motion').innerHTML = arr[lang_index].lang_motion_cont;
+  document.getElementById('lang_motion').innerHTML = arr[lang_index].lang_motion;
+  document.getElementById('lang_motion_cont').innerHTML = arr[lang_index].lang_motion_cont;
   document.getElementById('lang_plug').innerHTML = arr[lang_index].lang_plug;
   document.getElementById('lang_plug_cont').innerHTML = arr[lang_index].lang_plug_cont;
   document.getElementById('lang_shock').innerHTML = arr[lang_index].lang_shock;
@@ -140,20 +143,7 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('lang_goodnight_cont2').innerHTML = arr[lang_index].lang_goodnight_cont2;
   document.getElementById('lang_app_tl').innerHTML = arr[lang_index].lang_app_tl;
   document.getElementById('lang_app_cont').innerHTML = arr[lang_index].lang_app_cont;
-  document.getElementById('lang_footer_slogan').innerHTML = arr[lang_index].lang_footer_slogan;
-  document.getElementById('lang_footer_subtitle').innerHTML = arr[lang_index].lang_footer_subtitle;
-  document.getElementById('lang_footer_contactmail').innerHTML = arr[lang_index].lang_footer_contactmail;
-  document.getElementById('lang_footer_shortcuts').innerHTML = arr[lang_index].lang_footer_shortcuts;
-  document.getElementById('lang_footer_EQL').innerHTML = arr[lang_index].lang_footer_EQL;
-  document.getElementById('lang_footer_Homie').innerHTML = arr[lang_index].lang_footer_Homie;
-  document.getElementById('lang_footer_ripple').innerHTML = arr[lang_index].lang_footer_ripple;
-  document.getElementById('lang_footer_essence').innerHTML = arr[lang_index].lang_footer_essence;
-  document.getElementById('lang_footer_pcstick').innerHTML = arr[lang_index].lang_footer_pcstick;
-  document.getElementById('lang_footer_service').innerHTML = arr[lang_index].lang_footer_service;
-  document.getElementById('lang_footer_shop').innerHTML = arr[lang_index].lang_footer_shop;
-  document.getElementById('lang_footer_FAQ').innerHTML = arr[lang_index].lang_footer_FAQ;
-  document.getElementById('lang_footer_contactus').innerHTML = arr[lang_index].lang_footer_contactus;
-  document.getElementById('lang_footer_seenenough').innerHTML = arr[lang_index].lang_footer_seenenough;
+
 
 
   return;
