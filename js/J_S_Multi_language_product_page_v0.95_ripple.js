@@ -21,35 +21,12 @@ $(document).ready(function(){
 // onload 判斷該啟動哪個tab
 
 window.onload=SwitchFromTabCode();
+window.onload=updateLanguageByLangCode();
 
 function SwitchFromTabCode(){
 
-  // 萃取網址後面的參數
-/*  var QueryString = function () {
-    // This function is anonymous, is executed immediately and
-    // the return value is assigned to QueryString!
-    var query_string = {};
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-      var pair = vars[i].split("=");
-          // If first entry with this name
-      if (typeof query_string[pair[0]] === "undefined") {
-        query_string[pair[0]] = decodeURIComponent(pair[1]);
-          // If second entry with this name
-      } else if (typeof query_string[pair[0]] === "string") {
-        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-        query_string[pair[0]] = arr;
-          // If third or later entry with this name
-      } else {
-        query_string[pair[0]].push(decodeURIComponent(pair[1]));
-      }
-    }
-    return query_string;
-      console.log(query_string);
-  }();*/
 
-  //URL
+      // get URL
       var ex_url = location.href;
        console.log(ex_url);
       //取得問號之後的值
@@ -81,6 +58,9 @@ function changeBSTab(tab_index){
       //$('.nav-tabs a:last').tab('show') ;
       $('.nav-tabs li:eq('+tab_index+') a').tab('show')
 }
+
+
+
 
 
 
