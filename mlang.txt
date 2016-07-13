@@ -19,7 +19,7 @@
     "lang_nowireinstall_cont":"No wiring installation required",
     "lang_btsmart_cont":"Bluetooth Smart connectivity and long battery life",
     "lang_control_cont":"Control, schedule, monitor, check status and create events with one APP",
-    "lang_products":"Products",
+    "lang_products":"產品介紹",
     "lang_products_cont":"CENTRAL and a bunch of smart gadgets are happy to help  ",
     "lang_central":"CENTRAL",
     "lang_central_cont":"A communication center to link up with smart home products and could system",
