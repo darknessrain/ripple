@@ -63,7 +63,7 @@ function SwitchFromTabCode(){
       console.log(temp[1]);
       eval(temp[1]);
 
-      if(tabcode!=null){
+      if(temp[1]!=null){
 
         changeBSTab(tabcode);
 
