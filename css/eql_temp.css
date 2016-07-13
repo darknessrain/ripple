@@ -278,7 +278,11 @@ html, body {
 		  -o-transition:opacity 0.3s;
 	  }
 
-
+    .copyright p{
+			text-align: center;
+		  color: #999;
+		  font-size:16px;
+		}
 
 
 	/* Go Top button-----------------------------------------------------------*/
