@@ -38,7 +38,7 @@ function chg_productlang(lang_index){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
-
+return;
 
 }
 
@@ -66,7 +66,7 @@ function SwitchFromTabCode(){
 
         updateLanguageByLangCode();
       }
-
+return;
 
 
 }
@@ -85,6 +85,7 @@ function changeBSTab(tab_index){
       //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
       //$('.nav-tabs a:last').tab('show') ;
       $('.nav-tabs li:eq('+tab_index+') a').tab('show')
+  return;
 }
 
 
@@ -113,6 +114,8 @@ function updateLanguageByLangCode(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
+
+  return;
 }
 
 
@@ -372,7 +375,7 @@ function changeAllProductPagesUIWording(myArr_products,lang_index){
   document.getElementById('lang_p_weather_spec_hires').innerHTML = arr[lang_index].lang_p_weather_spec_hires;
   document.getElementById('lang_p_weather_spec_hires_cont').innerHTML = arr[lang_index].lang_p_weather_spec_hires_cont;
 
-
+ return;
 }
 
 
