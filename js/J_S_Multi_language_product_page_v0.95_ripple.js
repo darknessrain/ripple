@@ -21,9 +21,10 @@ function chg_productlang(lang_index){
 
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
+  console.log(lang_index);
   changePNavBarUIWording(lang_index);
 
-  if (lang_code_current!=null){
+  
         //讀取外部JSON文件
         var xmlhttp = new XMLHttpRequest();
         var url = "mlang_products.txt";
@@ -37,7 +38,7 @@ function chg_productlang(lang_index){
         };
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
-  }
+
 return;
 
 }
