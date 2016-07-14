@@ -23,10 +23,10 @@ function chg_lang(lang_index){
 
       //寫入Cookie
       setCookie('lang_code',lang_index,'365');
-      getCookie('lang_code');
+      var xck= getCookie('lang_code');
       //document.cookie="lang_code="+lang_index;
       //var x =document.cookie;
-      console.log('lang_code');
+      console.log(xck);
 			//更改標題文字
       //changeWebTitle(lang_index);
 
