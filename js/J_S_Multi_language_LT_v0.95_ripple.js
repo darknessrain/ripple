@@ -22,9 +22,11 @@
 function chg_lang(lang_index){
 
       //寫入Cookie
-      document.cookie="lang_code="+lang_index;
-      var x =document.cookie;
-      console.log(x);
+      setCookie('lang_code',lang_index,'365');
+      getCookie('lang_code');
+      //document.cookie="lang_code="+lang_index;
+      //var x =document.cookie;
+      console.log(lang_code);
 			//更改標題文字
       //changeWebTitle(lang_index);
 
@@ -32,6 +34,9 @@ function chg_lang(lang_index){
       changeCSSTag_Multi_Lang(lang_index);
       //更改Navbar文件
       changeNavBarUIWording(lang_index);
+
+      //根據語系更改圖片
+      changeImageByLang(lang_index);
 
 
       //讀外部JSON檔案
@@ -53,6 +58,35 @@ function chg_lang(lang_index){
 
 
 		}
+
+//設定cookie的function
+function setCookie(cookieName, cookieValue, exdays) {
+  if (document.cookie.indexOf(cookieName) >= 0) {
+    var expD = new Date();
+    expD.setTime(expD.getTime() + (-1*24*60*60*1000));
+    var uexpires = "expires="+expD.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + "; " + uexpires;
+  }
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+}
+
+// 讀取cookie
+function getCookie(cookieName) {
+  var name = cookieName + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0; i<ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1);
+      if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+  }
+  return "";
+}
+
+
+
 
 //主要功能1 : Multi-lang Title 根據 on_click 事件切換網頁標題
 function changeWebTitle(lang_index){
@@ -84,6 +118,53 @@ function changeNavBarUIWording(lang_index){
 
   return;
 }
+
+
+// 根據lang_index更換IMG標籤圖片
+
+function changeImageByLang(lang_index){
+
+  // 圖片路徑 請自行更換，不夠用也可以自己新增
+  console.log("change image function start now");
+  var tw_img1_src="images/slider_example_1_cht.jpg";
+  var eng_img1_src="images/slider_example_1_eng.jpg";
+  var jp_img1_src="images/slider_example_1_jp.jpg";
+
+  var tw_img2_src="images/slider_example_2_cht.jpg";
+  var eng_img2_src="images/slider_example_2_eng.jpg";
+  var jp_img2_src="images/slider_example_2_jp.jpg";
+
+  var tw_img3_src="images/slider_example_3_tw.jpg";
+  var eng_img3_src="images/slider_example_3_eng.jpg";
+  var jp_img3_src="images/slider_example_3_jp.jpg";
+
+  switch (lang_index) {
+    case 0:
+        document.getElementById('slideshowImage1').src=tw_img1_src;
+        document.getElementById('slideshowImage2').src=tw_img2_src;
+        console.log("change image to CHT version");
+      break;
+    case 1:
+        document.getElementById('slideshowImage1').src=eng_img1_src;
+        document.getElementById('slideshowImage2').src=eng_img2_src;
+        console.log("change image to ENG version");
+      break;
+    case 2:
+        document.getElementById('slideshowImage1').src=jp_img1_src;
+        document.getElementById('slideshowImage2').src=jp_img2_src;
+        console.log("change image to JP version");
+      break;
+    default:
+
+  }
+
+return;
+
+}
+
+
+
+
 
 function changeAllNavBarUIWording(arr,lang_index){
 
