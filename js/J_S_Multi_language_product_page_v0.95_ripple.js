@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 function chg_productlang(lang_index){
-  document.getElementById('langselection').innerHTML =  Choosed+'<b class="caret"></b>';
+  document.getElementById('langselection').innerHTML =  'Choosed'+'<b class="caret"></b>';
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
   console.log(lang_index);
