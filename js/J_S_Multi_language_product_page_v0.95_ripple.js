@@ -161,7 +161,7 @@ function getCookie(cookieName) {
 
 
 
-function changeAllProductPagesUIWording(myArr_products,lang_index){
+function changeAllProductPagesUIWording(arr,lang_index){
 
   document.getElementById('lang_title_products').innerHTML = arr[lang_index].lang_title_products;
   document.getElementById('lang_navlink1').innerHTML = arr[lang_index].lang_navlink1;
