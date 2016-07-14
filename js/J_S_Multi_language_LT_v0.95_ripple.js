@@ -26,7 +26,7 @@ function chg_lang(lang_index){
       getCookie('lang_code');
       //document.cookie="lang_code="+lang_index;
       //var x =document.cookie;
-      console.log(lang_code);
+      console.log('lang_code');
 			//更改標題文字
       //changeWebTitle(lang_index);
 
