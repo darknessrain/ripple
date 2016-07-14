@@ -797,6 +797,7 @@
 
 		  $('.nav li a').click(function(){
 			  var location = $(this).data('id').toLowerCase();
+        console.log(location);
 			  $body.animate({scrollTop: $("#"+location).offset().top}, {duration:1200});
 			  return false;
 			});
