@@ -126,9 +126,9 @@ function changeImageByLang(lang_index){
 
   // 圖片路徑 請自行更換，不夠用也可以自己新增
   console.log("change image function start now");
-  var tw_img1_src="images/slider_example_1_cht.jpg";
-  var eng_img1_src="images/slider_example_1_eng.jpg";
-  var jp_img1_src="images/slider_example_1_jp.jpg";
+  var tw_img1_src="images/slider_temp_1.jpg";
+  var eng_img1_src="images/slider_temp_1.jpg";
+  var jp_img1_src="images/slider_temp_1.jpg";
 
   var tw_img2_src="images/slider_example_2_cht.jpg";
   var eng_img2_src="images/slider_example_2_eng.jpg";
