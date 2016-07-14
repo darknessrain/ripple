@@ -127,12 +127,14 @@ function updateLanguageByLangCode(){
 
 
 
+//主要功能3 : 使用DOM方法，更換下拉&Navbar顯示介面
 function changeNavBarUIWording(lang_index){
 
   //更改Drondown UI 語系顯示
-  console.log("ChangeNav Bar dropdown" + lang_index);
-  document.getElementById('change_dropdown_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
-  console.log("ChangeNav Bar dropdown" + Multi_Lang_Wording[lang_index]);
+  //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
+
+  document.getElementById('change_dropdown_title2').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
+
   return;
 }
 
@@ -439,6 +441,7 @@ function detectUserLang(){
         break;
     }
 }
+
 
 //=====文字儲存區======
 //多語系body標籤
