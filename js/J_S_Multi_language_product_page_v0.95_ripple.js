@@ -69,6 +69,8 @@ function SwitchFromTabCode(){
 
         updateLanguageByLangCode();
       }
+      var lang_code_temp = getCookie("lang_code");
+      changeNavBarUIWording(lang_code_temp);
 return;
 
 
