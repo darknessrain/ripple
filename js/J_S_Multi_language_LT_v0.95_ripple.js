@@ -65,12 +65,12 @@ function setCookie(cookieName, cookieValue, exdays) {
     var expD = new Date();
     expD.setTime(expD.getTime() + (-1*24*60*60*1000));
     var uexpires = "expires="+expD.toUTCString();
-    document.cookie = cookieName + "=" + cookieValue + "; " + uexpires;
+    document.cookie = cookieName + "=" + cookieValue + "; " + uexpires+"; "+ 'path=/';
   }
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires="+d.toUTCString();
-  document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+  document.cookie = cookieName + "=" + cookieValue + "; " + expires+"; "+ 'path=/';
 }
 
 // 讀取cookie
