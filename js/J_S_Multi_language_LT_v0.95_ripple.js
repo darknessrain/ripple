@@ -181,6 +181,10 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('lang_navlink10').innerHTML = arr[lang_index].lang_navlink10;
   document.getElementById('lang_navlink11').innerHTML = arr[lang_index].lang_navlink11;
   document.getElementById('lang_navlink12').innerHTML = arr[lang_index].lang_navlink12;
+
+  document.getElementById('lang_navcht').innerHTML = arr[lang_index].lang_navcht;
+  document.getElementById('lang_naveng').innerHTML = arr[lang_index].lang_naveng;
+//  document.getElementById('lang_navjp').innerHTML = arr[lang_index].lang_navjp;
   document.getElementById('lang_smarthomeseries').innerHTML = arr[lang_index].lang_smarthomeseries;
   document.getElementById('lang_smarthomeseries_cont').innerHTML = arr[lang_index].lang_smarthomeseries_cont;
   document.getElementById('lang_ripple_icon_cont').innerHTML = arr[lang_index].lang_ripple_icon_cont;
