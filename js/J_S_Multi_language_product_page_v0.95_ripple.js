@@ -92,17 +92,6 @@ function changeBSTab(tab_index){
 }
 
 
-function getCookie(cname) {
-     var name = cname + "=";
-     var ca = document.cookie.split(';');
-     for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if(c.indexOf(name) == 0)
-           return c.substring(name.length,c.length);
-     }
-     return "";
-}
 
 
 
@@ -110,7 +99,7 @@ function updateLanguageByLangCode(){
 
   // 取得lang_code若無法由cookie中取得，則由瀏覽器語言碼來判斷
   var lang_code_current = getCookie("lang_code");
-  console.log(lang_code);
+
   console.log(lang_code_current);
   if (lang_code_current!=null){
         //讀取外部JSON文件
