@@ -40,7 +40,7 @@ function chg_productlang(lang_index){
         };
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
-
+console.log("chg_productlang is finish.");
 return;
 
 }
@@ -69,6 +69,7 @@ function SwitchFromTabCode(){
 
 
       }
+      changeNavBarUIWording(lang_index);
 
 return;
 
@@ -118,7 +119,7 @@ function updateLanguageByLangCode(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
-    changeNavBarUIWording(lang_index);
+
 
   return;
 }
