@@ -110,7 +110,7 @@ function updateLanguageByLangCode(){
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var myArr_products = JSON.parse(xmlhttp.responseText);
             console.log(myArr_products);
-            changeAllProductPagesUIWording(myArr_products,lang_index);
+            changeAllProductPagesUIWording(myArr_products,lang_code_current);
             }
         };
         xmlhttp.open("GET", url, true);
