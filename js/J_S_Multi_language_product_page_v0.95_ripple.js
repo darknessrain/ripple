@@ -132,7 +132,7 @@ function changeNavBarUIWording(lang_index){
   //更改Drondown UI 語系顯示
   console.log("ChangeNav Bar dropdown" + lang_index);
   document.getElementById('change_dropdown_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
-
+  console.log("ChangeNav Bar dropdown" + Multi_Lang_Wording[lang_index]);
   return;
 }
 
