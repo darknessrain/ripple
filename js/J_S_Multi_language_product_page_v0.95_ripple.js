@@ -18,14 +18,14 @@ $(document).ready(function(){
 
 
 function chg_productlang(lang_index){
-  document.getElementById('langselection').innerHTML =  'Choosed'+'<b class="caret"></b>';
+
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
   console.log(lang_index);
 
   updateLanguageByLangCode();
 
-
+        changeNavBarUIWording(lang_index);
 
         //讀取外部JSON文件
         var xmlhttp = new XMLHttpRequest();
@@ -69,7 +69,7 @@ function SwitchFromTabCode(){
 
 
       }
-      changeNavBarUIWording(lang_index);
+
 
 return;
 
