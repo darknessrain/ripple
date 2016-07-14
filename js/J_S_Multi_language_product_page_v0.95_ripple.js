@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 function chg_productlang(lang_index){
-
+  document.getElementById('langselection').innerHTML =  Choosed+'<b class="caret"></b>';
   //更改Navbar文件
   console.log("start Change Product Lanuange by Dropdown");
   console.log(lang_index);
@@ -132,7 +132,7 @@ function changeNavBarUIWording(lang_index){
   //更改Drondown UI 語系顯示
   //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
 
-  document.getElementById('change_dropdown_title2').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
+  document.getElementById('langselection').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
 
   return;
 }
