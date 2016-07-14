@@ -24,8 +24,6 @@ function chg_lang(lang_index){
       //寫入Cookie
       setCookie('lang_code',lang_index,'365');
       var xck= getCookie('lang_code');
-      //document.cookie="lang_code="+lang_index;
-      //var x =document.cookie;
       console.log(xck);
 			//更改標題文字
       //changeWebTitle(lang_index);
@@ -247,21 +245,30 @@ function detectUserLang(){
     switch (currentBrowserLang) {
       case "zh-tw":
             chg_lang(0);
+            autolang_index=0;
         break;
       case "zh-cn":
             chg_lang(0);
+            autolang_index=0;
         break;
       case "zh-hk":
             chg_lang(0);
+            autolang_index=0;
         break;
       case "ja":
             chg_lang(2);
+            autolang_index=2;
         break;
 
       default:
             chg_lang(1);
+            autolang_index=1;
         break;
     }
+
+    setCookie('lang_code',autolang_index,'365');
+    var xck2= getCookie('lang_code');
+    console.log(xck2);
 }
 
 
