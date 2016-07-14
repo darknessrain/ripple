@@ -1,0 +1,19 @@
+Html:
+<h4 style="clear:both">Product</h4>
+<!--<a href="#" target="_blank" class="btn btn-block button">Buy Now</a>-->
+
+
+CSS/ eql_temp:
+.copyright p{
+                text-align: center;
+                color: #999;
+                font-size:13px;
+                letter-spacing: 0.5px;
+                }
+.snBtn {
+                width:200px;
+                height: 20px;
+                margin-left:-50px;
+                display: block;
+          }
+
