@@ -116,6 +116,7 @@ function updateLanguageByLangCode(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
+  changeNavBarUIWording(lang_code_current);
 
   return;
 }
