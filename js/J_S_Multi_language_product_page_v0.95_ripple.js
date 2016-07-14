@@ -90,6 +90,8 @@ function changeBSTab(tab_index){
       //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
       //$('.nav-tabs a:last').tab('show') ;
       $('.nav-tabs li:eq('+tab_index+') a').tab('show')
+      var lang_code_temp = getCookie("lang_code");
+      changeNavBarUIWording(lang_code_temp);
   return;
 }
 
