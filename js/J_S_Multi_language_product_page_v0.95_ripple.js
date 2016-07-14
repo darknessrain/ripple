@@ -11,7 +11,7 @@
 
 $(document).ready(function(){
 
-
+SwitchFromTabCode();
 
 
 });
@@ -49,7 +49,7 @@ return;
 
 // onload 判斷該啟動哪個tab
 
-window.onload=SwitchFromTabCode();
+
 
 
 function SwitchFromTabCode(){
@@ -66,7 +66,7 @@ function SwitchFromTabCode(){
       if(temp[1]!=null){
 
         changeBSTab(tabcode);
-
+        changeNavBarUIWording(lang_index);
 
       }
 
