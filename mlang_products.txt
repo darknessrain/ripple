@@ -1,4 +1,4 @@
-﻿[
+[
     {
       "lang_title_products": "EQL - Ripple",
       "lang_navlink1": "特色",
@@ -122,7 +122,7 @@
       "lang_p_plug_breif3": "搭配其他Ripple裝置,　設定互動連結, 列如: WEATHER偵測到溫度過高, 即驅動打開連接到PLUG的電扇, 或門打開後即驅動打開連結到PLUG的立燈",
       "lang_p_plug_breif4": "記錄連接電器的用電量並提示高用電量的電器",
       "lang_p_plug_breif5": "可輸入單位電費, 幫助你計算及管理電費開支",
-      "lang_p_plug_purchase_btn": "lang_p_plug_purchase_btn",
+      "lang_p_plug_purchase_btn": "立刻購買",
       "lang_p_plug_spec_item": "Item",
       "lang_p_plug_spec_desc": "Description",
       "lang_p_plug_spec_bt": "Bluetooth",
