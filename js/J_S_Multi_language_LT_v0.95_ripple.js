@@ -141,17 +141,17 @@ function changeImageByLang(lang_index){
   switch (lang_index) {
     case 0:
         document.getElementById('slideshowImage1').src=tw_img1_src;
-        document.getElementById('slideshowImage2').src=tw_img2_src;
+        //document.getElementById('slideshowImage2').src=tw_img2_src;
         console.log("change image to CHT version");
       break;
     case 1:
         document.getElementById('slideshowImage1').src=eng_img1_src;
-        document.getElementById('slideshowImage2').src=eng_img2_src;
+      //  document.getElementById('slideshowImage2').src=eng_img2_src;
         console.log("change image to ENG version");
       break;
     case 2:
         document.getElementById('slideshowImage1').src=jp_img1_src;
-        document.getElementById('slideshowImage2').src=jp_img2_src;
+        //document.getElementById('slideshowImage2').src=jp_img2_src;
         console.log("change image to JP version");
       break;
     default:
