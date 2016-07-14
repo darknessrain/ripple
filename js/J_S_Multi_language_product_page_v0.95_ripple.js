@@ -24,7 +24,7 @@ function chg_productlang(lang_index){
   console.log(lang_index);
 
   updateLanguageByLangCode();
-  changeNavBarUIWording(lang_index);
+
 
 
         //讀取外部JSON文件
@@ -67,10 +67,9 @@ function SwitchFromTabCode(){
 
         changeBSTab(tabcode);
 
-        updateLanguageByLangCode();
+
       }
-      var lang_code_temp = getCookie("lang_code");
-      changeNavBarUIWording(lang_code_temp);
+
 return;
 
 
@@ -90,8 +89,7 @@ function changeBSTab(tab_index){
       //$('.nav-tabs a[href="#' + tab_name + '"]').tab('show');
       //$('.nav-tabs a:last').tab('show') ;
       $('.nav-tabs li:eq('+tab_index+') a').tab('show')
-      var lang_code_temp = getCookie("lang_code");
-      changeNavBarUIWording(lang_code_temp);
+
   return;
 }
 
@@ -120,7 +118,7 @@ function updateLanguageByLangCode(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
   }
-  changeNavBarUIWording(lang_code_current);
+    changeNavBarUIWording(lang_index);
 
   return;
 }
