@@ -63,7 +63,7 @@
 	.labal_desktop {
 		display:none;
 	}
-	
+
 	.labal_mobile {
 		display:block;
 		margin-top:50px;
@@ -150,6 +150,12 @@
 	font-size:46px;
 	text-align:center;
 	}
+
+  .ripple-plogo-center{
+    	text-align:center;
+      margin: auto;
+  }
+
 }
 
 .spec_table {
