@@ -206,7 +206,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_central_breif1').innerHTML = arr[lang_index].lang_p_central_breif1;
   document.getElementById('lang_p_central_breif2').innerHTML = arr[lang_index].lang_p_central_breif2;
   document.getElementById('lang_p_central_breif3').innerHTML = arr[lang_index].lang_p_central_breif3;
-  document.getElementById('lang_p_central_purchase_btn').innerHTML = arr[lang_index].lang_p_central_purchase_btn;
+  //document.getElementById('lang_p_central_purchase_btn').innerHTML = arr[lang_index].lang_p_central_purchase_btn;
 
   document.getElementById('lang_p_central_spec_item').innerHTML = arr[lang_index].lang_p_central_spec_item;
   document.getElementById('lang_p_central_spec_Description').innerHTML = arr[lang_index].lang_p_central_spec_Description;
@@ -230,7 +230,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_doorsensor_breif1').innerHTML = arr[lang_index].lang_p_doorsensor_breif1;
   document.getElementById('lang_p_doorsensor_breif2').innerHTML = arr[lang_index].lang_p_doorsensor_breif2;
   document.getElementById('lang_p_doorsensor_breif3').innerHTML = arr[lang_index].lang_p_doorsensor_breif3;
-  document.getElementById('lang_p_doorsensor_purchase_btn').innerHTML = arr[lang_index].lang_p_doorsensor_purchase_btn;
+//  document.getElementById('lang_p_doorsensor_purchase_btn').innerHTML = arr[lang_index].lang_p_doorsensor_purchase_btn;
 
   document.getElementById('lang_p_doorsensor_spec_item').innerHTML = arr[lang_index].lang_p_doorsensor_spec_item;
   document.getElementById('lang_p_doorsensor_spec_desc').innerHTML = arr[lang_index].lang_p_doorsensor_spec_desc;
@@ -255,7 +255,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_light_breif2').innerHTML = arr[lang_index].lang_p_light_breif2;
   document.getElementById('lang_p_light_breif3').innerHTML = arr[lang_index].lang_p_light_breif3;
   document.getElementById('lang_p_light_breif4').innerHTML = arr[lang_index].lang_p_light_breif4;
-  document.getElementById('lang_p_light_purchase_btn').innerHTML = arr[lang_index].lang_p_light_purchase_btn;
+//  document.getElementById('lang_p_light_purchase_btn').innerHTML = arr[lang_index].lang_p_light_purchase_btn;
 
   document.getElementById('lang_p_light_spec_item').innerHTML = arr[lang_index].lang_p_light_spec_item;
   document.getElementById('lang_p_light_spec_desc').innerHTML = arr[lang_index].lang_p_light_spec_desc;
@@ -285,7 +285,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_motion_breif1').innerHTML = arr[lang_index].lang_p_motion_breif1;
   document.getElementById('lang_p_motion_breif2').innerHTML = arr[lang_index].lang_p_motion_breif2;
   document.getElementById('lang_p_motion_breif3').innerHTML = arr[lang_index].lang_p_motion_breif3;
-  document.getElementById('lang_p_motion_purchase_btn').innerHTML = arr[lang_index].lang_p_motion_purchase_btn;
+//  document.getElementById('lang_p_motion_purchase_btn').innerHTML = arr[lang_index].lang_p_motion_purchase_btn;
 
   document.getElementById('lang_p_motion_spec_item').innerHTML = arr[lang_index].lang_p_motion_spec_item;
   document.getElementById('lang_p_motion_spec_desc').innerHTML = arr[lang_index].lang_p_motion_spec_desc;
@@ -312,7 +312,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_plug_breif3').innerHTML = arr[lang_index].lang_p_plug_breif3;
   document.getElementById('lang_p_plug_breif4').innerHTML = arr[lang_index].lang_p_plug_breif4;
   document.getElementById('lang_p_plug_breif5').innerHTML = arr[lang_index].lang_p_plug_breif5;
-  document.getElementById('lang_p_plug_purchase_btn').innerHTML = arr[lang_index].lang_p_plug_purchase_btn;
+//  document.getElementById('lang_p_plug_purchase_btn').innerHTML = arr[lang_index].lang_p_plug_purchase_btn;
 
   document.getElementById('lang_p_plug_spec_item').innerHTML = arr[lang_index].lang_p_plug_spec_item;
   document.getElementById('lang_p_plug_spec_desc').innerHTML = arr[lang_index].lang_p_plug_spec_desc;
@@ -337,7 +337,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_shock_breif1').innerHTML = arr[lang_index].lang_p_shock_breif1;
   document.getElementById('lang_p_shock_breif2').innerHTML = arr[lang_index].lang_p_shock_breif2;
   document.getElementById('lang_p_shock_breif3').innerHTML = arr[lang_index].lang_p_shock_breif3;
-  document.getElementById('lang_p_shock_purchase_btn').innerHTML = arr[lang_index].lang_p_shock_purchase_btn;
+//  document.getElementById('lang_p_shock_purchase_btn').innerHTML = arr[lang_index].lang_p_shock_purchase_btn;
 
   document.getElementById('lang_p_shock_spec_item').innerHTML = arr[lang_index].lang_p_shock_spec_item;
   document.getElementById('lang_p_shock_spec_desc').innerHTML = arr[lang_index].lang_p_shock_spec_desc;
@@ -359,7 +359,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_smoke_breif1').innerHTML = arr[lang_index].lang_p_smoke_breif1;
   document.getElementById('lang_p_smoke_breif2').innerHTML = arr[lang_index].lang_p_smoke_breif2;
   document.getElementById('lang_p_smoke_breif3').innerHTML = arr[lang_index].lang_p_smoke_breif3;
-  document.getElementById('lang_p_smoke_purchase_btn').innerHTML = arr[lang_index].lang_p_smoke_purchase_btn;
+//  document.getElementById('lang_p_smoke_purchase_btn').innerHTML = arr[lang_index].lang_p_smoke_purchase_btn;
 
   document.getElementById('lang_p_smoke_spec_item').innerHTML = arr[lang_index].lang_p_smoke_spec_item;
   document.getElementById('lang_p_smoke_spec_desc').innerHTML = arr[lang_index].lang_p_smoke_spec_desc;
@@ -389,7 +389,7 @@ function changeAllProductPagesUIWording(arr,lang_index){
   document.getElementById('lang_p_weather_breif2').innerHTML = arr[lang_index].lang_p_weather_breif2;
   document.getElementById('lang_p_weather_breif3').innerHTML = arr[lang_index].lang_p_weather_breif3;
   document.getElementById('lang_p_weather_breif4').innerHTML = arr[lang_index].lang_p_weather_breif4;
-  document.getElementById('lang_p_smoke_purchase_btn').innerHTML = arr[lang_index].lang_p_smoke_purchase_btn;
+//  document.getElementById('lang_p_smoke_purchase_btn').innerHTML = arr[lang_index].lang_p_smoke_purchase_btn;
 
   document.getElementById('lang_p_weather_spec_item').innerHTML = arr[lang_index].lang_p_weather_spec_item;
   document.getElementById('lang_p_weather_spec_desc').innerHTML = arr[lang_index].lang_p_weather_spec_desc;
