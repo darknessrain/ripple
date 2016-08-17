@@ -256,7 +256,7 @@ function detectUserLang(){
     var currentBrowserLang = tempLang.toLowerCase();
     console.log(currentBrowserLang);
 
-  if (IsforceChangeLang_index==null){
+  if (IsforceChangeLang_index!=1){
     switch (currentBrowserLang) {
       case "zh-tw":
             chg_lang(0);
