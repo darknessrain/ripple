@@ -90,7 +90,7 @@ function getCookie(cookieName) {
 // 設定cookie 並將 forceChangeLang_index 值填上1,cookie一小時後失效
 function   forceChangeLangSetCookie(){
   //寫入Cookie
-  setCookie('forceChangeLang_index',1,'1');
+  setCookie('forceChangeLang_index',1,'0.2');
   var xcka= getCookie('forceChangeLang_index');
   console.log("forceChangeLang_index="+xcka);
 }
