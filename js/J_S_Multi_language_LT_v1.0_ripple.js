@@ -25,6 +25,10 @@ function chg_lang(lang_index){
       setCookie('lang_code',lang_index,'365');
       var xck= getCookie('lang_code');
       console.log(xck);
+
+      forceChangeLangSetCookie();
+
+
 			//更改標題文字
       //changeWebTitle(lang_index);
 
@@ -83,7 +87,13 @@ function getCookie(cookieName) {
   return "";
 }
 
-
+// 設定cookie 並將 forceChangeLang_index 值填上1,cookie一小時後失效
+function   forceChangeLangSetCookie(){
+  //寫入Cookie
+  setCookie('forceChangeLang_index',1,'0.1');
+  var xcka= getCookie('forceChangeLang_index');
+  console.log("forceChangeLang_index="+xcka);
+}
 
 
 //主要功能1 : Multi-lang Title 根據 on_click 事件切換網頁標題
