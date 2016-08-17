@@ -438,7 +438,7 @@ function detectUserLang(){
 
       console.log("before detectUserLang, we get cookie- forceChangeLang_index:");
       console.log("forceChangeLang_index="+IsforceChangeLang_index);
-      if (IsforceChangeLang_index==null){
+      if (IsforceChangeLang_index!=1){
 
             var tempLang = window.navigator.userLanguage || window.navigator.language ;
             var currentBrowserLang = tempLang.toLowerCase();
