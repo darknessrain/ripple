@@ -288,7 +288,11 @@ function detectUserLang(){
     setCookie('lang_code',autolang_index,'365');
     var xck2= getCookie('lang_code');
     console.log(xck2);
-    }
+
+  } else {
+    var Previous_Lang_index= getCookie('lang_code');
+    auto_chg_lang(Previous_Lang_index);
+  }
 }
 
 
