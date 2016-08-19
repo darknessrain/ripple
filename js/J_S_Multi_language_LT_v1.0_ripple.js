@@ -14,19 +14,23 @@
 
 //=====程式開始======
 
+function chg_lang(lang_index){
 
+        forceChangeLangSetCookie();
+        auto_chg_lang(lang_index);
+}
 
 
 
 // 切換語系
-function chg_lang(lang_index){
+function auto_chg_lang(lang_index){
 
       //寫入Cookie
       setCookie('lang_code',lang_index,'365');
       var xck= getCookie('lang_code');
       console.log(xck);
 
-      forceChangeLangSetCookie();
+
 
 
 			//更改標題文字
@@ -259,24 +263,24 @@ function detectUserLang(){
   if (IsforceChangeLang_index!=1){
     switch (currentBrowserLang) {
       case "zh-tw":
-            chg_lang(0);
+            auto_chg_lang(0);
             autolang_index=0;
         break;
       case "zh-cn":
-            chg_lang(0);
+            auto_chg_lang(0);
             autolang_index=0;
         break;
       case "zh-hk":
-            chg_lang(0);
+            auto_chg_lang(0);
             autolang_index=0;
         break;
       case "ja":
-            chg_lang(2);
+            auto_chg_lang(2);
             autolang_index=2;
         break;
 
       default:
-            chg_lang(1);
+            auto_chg_lang(1);
             autolang_index=1;
         break;
     }
